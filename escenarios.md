@@ -1,3 +1,1 @@
-#Another readme
-
 - User stories
