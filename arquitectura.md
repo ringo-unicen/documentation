@@ -1,0 +1,2 @@
+- Componentes y responsabilidades
+- Interaccion entre componentes
