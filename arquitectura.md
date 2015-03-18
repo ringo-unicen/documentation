@@ -1,4 +1,4 @@
-##Componentes
+##Components
 
 
 - **Node manager**: Responsible for managing the lifecycle of the nodes and making sure the are running.
