@@ -8,7 +8,7 @@
 
 - As an admin I want to be able to manage SLAs. An SLA will have a name
 - As an admin I want to be able to manage Nodes
-- As an admin I want to be able to (un)assign a Node to a SLA
+- As an admin I want to be able to (un)assign a Node to a SLA (Note: this will be managed at node edition)
 - As an admin I want to be able to define node types. A node type will have a name and capabilities
 
 ###Metrics
