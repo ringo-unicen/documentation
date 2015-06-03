@@ -17,6 +17,7 @@
 - **Worker**: Performs work for a given SLA.
 - **API**: Coordinates the work between the node manager and the storage. It exposes an API for the **Web** to consume
 - **Web**: Displays the information about the system and allows an administrator to take actions
+- **Policy Evaluator**: Base on policies, evaluate metrics and take actions according those
 
 ![Logic view](./images/Arquitectura.%20Vista%20Logica.png)
 
