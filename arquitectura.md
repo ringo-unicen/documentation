@@ -1,5 +1,10 @@
 ##Arquitectura
-
+- [Componentes](#componentes)
+- [Escenarios](#escenarios)
+  - [Node: Crear](#node--Crear)
+  - [Scale](#scale)
+  
+  
 ###Componentes
 
 - **Node manager**: Responsible for managing the lifecycle of the nodes and making sure the are running.
