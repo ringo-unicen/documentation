@@ -18,3 +18,7 @@
 ####Node: Edit & Query
 
 ![Logic view](./images/Arquitectura.%20Vista%20Dinamica.%20Manage%20Node.%20Edit%20&%20Query.png)
+
+####Node: Delete
+
+![Logic view](./images/Arquitectura.%20Vista%20Dinamica.%20Manage%20Node.%20Delete.png)
