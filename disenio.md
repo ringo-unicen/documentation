@@ -17,7 +17,6 @@ Component design
 
 ![Node Manager design](https://raw.githubusercontent.com/ringo-unicen/documentation/master/images/detailed-design-nodemanager.png)
 
-
 Operations (pseudocode)
 
 create (type: String)
