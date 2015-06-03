@@ -1,8 +1,13 @@
 ##Arquitectura
 - [Componentes](#componentes)
 - [Escenarios](#escenarios)
-  - [Node: Crear](#node--Crear)
-  - [Scale](#scale)
+  - [Node: Crear](#node-crear)
+  - [Node: Edit & Query](#node-edit--query)
+  - [Node: Delete](#node-delete)
+  - [Node Type](#node-type)
+  - [Sla](#sls)
+  - [Metrics](#metrics)
+  - [Policies](#policies)
   
   
 ###Componentes
