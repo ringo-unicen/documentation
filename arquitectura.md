@@ -5,7 +5,7 @@
   - [Node: Edit & Query](#node-edit--query)
   - [Node: Delete](#node-delete)
   - [Node Type](#node-type)
-  - [Sla](#sls)
+  - [Sla](#sla)
   - [Metrics](#metrics)
   - [Policies](#policies)
   
