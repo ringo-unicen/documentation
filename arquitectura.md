@@ -22,3 +22,19 @@
 ####Node: Delete
 
 ![Logic view](./images/Arquitectura.%20Vista%20Dinamica.%20Manage%20Node.%20Delete.png)
+
+####Node Type
+
+![Logic view](./images/Arquitectura.%20Vista%20Dinamica.%20Manage%20Node%20Type.png)
+
+####Sla
+
+![Logic view](./images/Arquitectura.%20Vista%20Dinamica.%20Manage%20Sla.png)
+
+####Metrics
+
+![Logic view](./images/Arquitectura.%20Vista%20Dinamica.%20Metrics.png)
+
+####Policies
+
+![Logic view](./images/Arquitectura.%20Vista%20Dinamica.%20Policies.png)
