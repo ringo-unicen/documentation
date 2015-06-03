@@ -11,7 +11,14 @@ The following diagram shows how the detailed design of the agent component:
 
 
 
-Node Manager operations (pseudocode)
+Node Manager 
+
+Component design
+
+![Node Manager design](https://raw.githubusercontent.com/ringo-unicen/documentation/master/images/detailed-design-nodemanager.png)
+
+
+Operations (pseudocode)
 
 create (type: String)
 ```javascript
