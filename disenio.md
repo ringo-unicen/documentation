@@ -1,3 +1,15 @@
+This page shows the detailed design for each component
+
+Agent
+
+The following diagram shows how the detailed design of the agent component:
+
+![agent design](https://raw.githubusercontent.com/ringo-unicen/documentation/master/images/detailed-design-agent.png)
+
+
+
+
+
 
 Node Manager operations (pseudocode)
 
