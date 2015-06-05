@@ -95,4 +95,49 @@ terminate(id: String)
 vmmanager.terminate(id);
 ```
 
+API
 
+Operations (pseudocode)
+
+POST /node 
+```javascript
+var id = storage.persist(node);
+var info = nodeManager.create(id, node.type);
+node.vmInfo = info;
+storage.update(node);
+```
+
+POST /node/{id}/created
+```javascript
+var node = storage.get(id);
+var prev = storage.get(node.previous);
+var next = storage.get(node.next);
+next.previous = id;
+prev.next = id;
+storage.update(prev);
+storage.update(next);
+
+nodeManager.config(id, {prev: prev.id, next: next: next.id});
+nodeManager.start(id);
+nodeManager.config(prev.id, {next: id});
+
+//More updates?
+```
+
+PUT /node/{id}
+```javascript
+var node = storage.get(id);
+node.configuration = config;
+nodeManager.config(id, config);
+storage.update(node);
+```
+
+GET /node/{id}
+```javascript
+return storage.get(id);
+```
+
+GET /node
+```javascript
+return storage.list();
+```
