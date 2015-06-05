@@ -28,6 +28,29 @@ The following diagram shows how the detailed design of the agent component:
 
 Operations (pseudocode)
 
+configure (info: Object)
+```javascript
+configuration.write(info);
+if (info.active) {
+  router.activate();
+} else {
+  router.delegate();
+}
+```
+
+start
+```javascript
+router.start();
+collector.start():
+```
+stop
+```javascript
+router.stop();
+collector.stop():
+```
+
+
+
 
 
 
