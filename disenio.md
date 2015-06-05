@@ -26,7 +26,7 @@ The following diagram shows how the detailed design of the agent component:
 
 ![agent design](https://raw.githubusercontent.com/ringo-unicen/documentation/master/images/detailed-design-agent.png)
 
-
+Operations (pseudocode)
 
 
 
