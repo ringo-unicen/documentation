@@ -11,7 +11,7 @@ Api
 
 Modelo
 
-![modelo](https://raw.githubusercontent.com/ringo-unicen/documentation/master/images/Disenio.%20Modelo.png)
+![modelo](https://raw.githubusercontent.com/ringo-unicen/documentation/master/images/Disenio.%20Model.png)
 
 
 
