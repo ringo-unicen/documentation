@@ -3,6 +3,29 @@ Agente
 
 ![agente](https://raw.githubusercontent.com/ringo-unicen/documentation/master/images/Disenio.%20Agent.png)
 
+Operations (pseudocode)
+
+configure (info: Object)
+```javascript
+configuration.write(info);
+if (info.active) {
+  router.activate();
+} else {
+  router.delegate();
+}
+```
+
+start
+```javascript
+router.start();
+collector.start():
+```
+stop
+```javascript
+router.stop();
+collector.stop():
+```
+
 Node Manager 
 
 ![node manager](https://raw.githubusercontent.com/ringo-unicen/documentation/master/images/Disenio.%20Node%20Manager.png)
@@ -92,40 +115,4 @@ return storage.list();
 Modelo
 
 ![modelo](https://raw.githubusercontent.com/ringo-unicen/documentation/master/images/Disenio.%20Model.png)
-
-
-
-
-
-
-This page shows the detailed design for each component
-
-Agent
-
-The following diagram shows how the detailed design of the agent component:
-
-![agent design](https://raw.githubusercontent.com/ringo-unicen/documentation/master/images/detailed-design-agent.png)
-
-Operations (pseudocode)
-
-configure (info: Object)
-```javascript
-configuration.write(info);
-if (info.active) {
-  router.activate();
-} else {
-  router.delegate();
-}
-```
-
-start
-```javascript
-router.start();
-collector.start():
-```
-stop
-```javascript
-router.stop();
-collector.stop():
-```
 
