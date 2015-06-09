@@ -17,6 +17,8 @@ The system architecture is modeled as a ring of nodes, where each node runs a pa
 When a system needs to use a service, it will call any given node in the ring. If the node provides the given service, then the agent will just act as a proxy for the service in the node, the service complete the request and the response is returned to the caller.
 
 If the node does not provide the service, then the agent will forward the call to the agent in the next node in the ring. This behavior continues until a node can fulfill the request or the request completes a full ring, in which case an error will be returned to the caller.
+
+![Logic view](./images/Arquitectura.%20Overview.png)
   
 ###Componentes
 
