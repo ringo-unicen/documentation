@@ -1,11 +1,18 @@
 
 Agente 
 
+![agente](https://raw.githubusercontent.com/ringo-unicen/documentation/master/images/Disenio.%20Agent.png)
+
 Node Manager 
+
+![node manager](https://raw.githubusercontent.com/ringo-unicen/documentation/master/images/Disenio.%20Node%20Manager.png)
 
 Api
 
 Modelo
+
+![modelo](https://raw.githubusercontent.com/ringo-unicen/documentation/master/images/Disenio.%20Modelo.png)
+
 
 
 
