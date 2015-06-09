@@ -7,36 +7,6 @@ Node Manager
 
 ![node manager](https://raw.githubusercontent.com/ringo-unicen/documentation/master/images/Disenio.%20Node%20Manager.png)
 
-Api
-
-Modelo
-
-![modelo](https://raw.githubusercontent.com/ringo-unicen/documentation/master/images/Disenio.%20Model.png)
-
-
-
-
-
-
-This page shows the detailed design for each component
-
-Agent
-
-The following diagram shows how the detailed design of the agent component:
-
-![agent design](https://raw.githubusercontent.com/ringo-unicen/documentation/master/images/detailed-design-agent.png)
-
-
-
-
-
-
-Node Manager 
-
-Component design
-
-![Node Manager design](https://raw.githubusercontent.com/ringo-unicen/documentation/master/images/detailed-design-nodemanager.png)
-
 Operations (pseudocode)
 
 create (type: String)
@@ -72,4 +42,90 @@ terminate(id: String)
 vmmanager.terminate(id);
 ```
 
+Api
+
+Operations (pseudocode)
+
+POST /node 
+```javascript
+var id = storage.persist(node);
+var info = nodeManager.create(id, node.type);
+node.vmInfo = info;
+storage.update(node);
+```
+
+POST /node/{id}/created
+```javascript
+var node = storage.get(id);
+var prev = storage.get(node.previous);
+var next = storage.get(node.next);
+next.previous = id;
+prev.next = id;
+storage.update(prev);
+storage.update(next);
+
+nodeManager.config(id, {prev: prev.id, next: next: next.id});
+nodeManager.start(id);
+nodeManager.config(prev.id, {next: id});
+
+//More updates?
+```
+
+PUT /node/{id}
+```javascript
+var node = storage.get(id);
+node.configuration = config;
+nodeManager.config(id, config);
+storage.update(node);
+```
+
+GET /node/{id}
+```javascript
+return storage.get(id);
+```
+
+GET /node
+```javascript
+return storage.list();
+```
+
+Modelo
+
+![modelo](https://raw.githubusercontent.com/ringo-unicen/documentation/master/images/Disenio.%20Model.png)
+
+
+
+
+
+
+This page shows the detailed design for each component
+
+Agent
+
+The following diagram shows how the detailed design of the agent component:
+
+![agent design](https://raw.githubusercontent.com/ringo-unicen/documentation/master/images/detailed-design-agent.png)
+
+Operations (pseudocode)
+
+configure (info: Object)
+```javascript
+configuration.write(info);
+if (info.active) {
+  router.activate();
+} else {
+  router.delegate();
+}
+```
+
+start
+```javascript
+router.start();
+collector.start():
+```
+stop
+```javascript
+router.stop();
+collector.stop():
+```
 
