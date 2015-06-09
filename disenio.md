@@ -1,3 +1,16 @@
+
+Agente 
+
+Node Manager 
+
+Api
+
+Modelo
+
+
+
+
+
 This page shows the detailed design for each component
 
 Agent
