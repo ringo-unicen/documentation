@@ -2,7 +2,7 @@
 - [Overview](#overview)
 - [Componentes](#componentes)
 - [Escenarios](#escenarios)
-  - [Node: Crear](#node-crear)
+  - [Node: Create](#node-create)
   - [Node: Edit & Query](#node-edit--query)
   - [Node: Delete](#node-delete)
   - [Node Type](#node-type)
@@ -32,7 +32,7 @@ If the node does not provide the service, then the agent will forward the call t
 ![Logic view](./images/Arquitectura.%20Vista%20Logica.png)
 
 ###Escenarios
-####Node: Crear
+####Node: Create
 
 ![Logic view](./images/Arquitectura.%20Vista%20Dinamica.%20Manage%20Node.%20Create.png)
 
